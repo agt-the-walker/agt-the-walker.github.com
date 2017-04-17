@@ -1,0 +1,21 @@
+<!DOCTYPE html>    
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Dimensions</title>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ <script>
+  $(function() {
+    // thanks http://stackoverflow.com/a/1974797/7468493
+    $(window).on('resize', function() {
+      $('#innerWidth').text($(window).innerWidth());
+      $('#innerHeight').text($(window).innerHeight());
+    }).resize();
+  });
+ </script>
+</head>
+<body>
+ <p>window.innerWidth: <span id="innerWidth"></span>
+ <p>window.innerHeight: <span id="innerHeight"></span>
+</body>
+</html>
