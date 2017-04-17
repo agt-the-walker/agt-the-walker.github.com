@@ -13,15 +13,9 @@
 			display: block;  /* No floating content on sides */
 		}
 	</style>
-</head>
-
-<body>
-
-	<canvas id='c' style = 'position: absolute; left: 0px; top: 0px;' >
-	</canvas>
-	
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script>
-		(function() {
+		$(function() {
 			var 
 				// Obtain a reference to the canvas element
 				// using its id.
@@ -87,9 +81,15 @@
 				redraw();
 			}
 		
-		})();
+		});
 	</script>
 	
+</head>
+
+<body>
+
+	<canvas id='c' style = 'position: absolute; left: 0px; top: 0px;' >
+	</canvas>
 </body>
 
 </html>
