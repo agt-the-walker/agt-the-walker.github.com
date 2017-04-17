@@ -47,7 +47,8 @@
 			// Display custom canvas.
 			// In this case it's a orange, 5 pixel border that
 			// resizes along with the browser window, with
-			// red, 3 pixel handles
+			// red, 3 pixel handles, and a centered text
+			// displaying the canvas width and height
 
 			function redraw() {
 				context.strokeStyle = 'red';
@@ -66,6 +67,14 @@
 				context.strokeStyle = 'orange';
 				context.lineWidth = '5';
 				context.strokeRect(0, 0, window.innerWidth, window.innerHeight);
+
+				context.font = '20px Calibri';
+				context.textAlign = 'center';
+				context.fillStyle = 'black';
+				context.fillText('Canvas width: ' + htmlCanvas.width + '. ' +
+				                 'Canvas height: ' + htmlCanvas.height,
+				                 htmlCanvas.width / 2,
+				                 htmlCanvas.height / 2);
 			}
 		
 			// Runs each time the DOM window resize event fires.
