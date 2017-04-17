@@ -66,8 +66,8 @@
 				context.font = '20px Calibri';
 				context.textAlign = 'center';
 				context.fillStyle = 'black';
-				context.fillText('Canvas width: ' + htmlCanvas.width + '. ' +
-				                 'Canvas height: ' + htmlCanvas.height,
+				context.fillText('Canvas width: ' + $(htmlCanvas).width() + '. ' +
+				                 'Canvas height: ' + $(htmlCanvas).height(),
 				                 htmlCanvas.width / 2,
 				                 htmlCanvas.height / 2);
 			}
