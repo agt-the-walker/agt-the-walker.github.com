@@ -10,6 +10,8 @@
     $(window).on('resize', function() {
       $('#innerWidth').text($(window).innerWidth());
       $('#innerHeight').text($(window).innerHeight());
+      $('#width').text($(window).width());
+      $('#height').text($(window).height());
     }).resize();
   });
  </script>
@@ -17,5 +19,7 @@
 <body>
  <p>window.innerWidth: <span id="innerWidth"></span>
  <p>window.innerHeight: <span id="innerHeight"></span>
+ <p>window.width: <span id="width"></span>
+ <p>window.height: <span id="height"></span>
 </body>
 </html>
