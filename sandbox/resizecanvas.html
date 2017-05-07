@@ -40,6 +40,29 @@
 				resizeCanvas();
 			}
 				
+			// https://www.html5rocks.com/en/tutorials/canvas/hidpi/
+
+			function hidpi() {
+				var devicePixelRatio = window.devicePixelRatio || 1;
+				var backingStoreRatio = context.webkitBackingStorePixelRatio ||
+				                        context.mozBackingStorePixelRatio ||
+				                        context.msBackingStorePixelRatio ||
+				                        context.oBackingStorePixelRatio ||
+				                        context.backingStorePixelRatio || 1;
+				var ratio = devicePixelRatio / backingStoreRatio;
+
+				if (devicePixelRatio !== backingStoreRatio) {
+					var oldWidth = htmlCanvas.width;
+					var oldHeight = htmlCanvas.height;
+
+					htmlCanvas.width = oldWidth * ratio;
+					htmlCanvas.height = oldHeight * ratio;
+					htmlCanvas.style.width = oldWidth + 'px';
+					htmlCanvas.style.height = oldHeight + 'px';
+					context.scale(ratio, ratio);
+				}
+			}
+
 			// Display custom canvas.
 			// In this case it's a orange, 5 pixel border that
 			// resizes along with the browser window, with
@@ -81,6 +104,7 @@
 			function resizeCanvas() {
 				htmlCanvas.width = window.innerWidth;
 				htmlCanvas.height = window.innerHeight;
+				hidpi();
 				redraw();
 			}
 		
