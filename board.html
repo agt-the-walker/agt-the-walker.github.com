@@ -4,8 +4,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Board games in my BGG geeklists</title>
  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
  <script>
 
 $(document).ready(function() {
@@ -13,7 +13,7 @@ $(document).ready(function() {
     'paging': false,
     'responsive': true,
     'ajax': {
-      url: 'board.txt',
+      url: 'board.json',
       dataSrc: ''
     },
     'columnDefs': [
@@ -28,7 +28,7 @@ $(document).ready(function() {
  </script>
 </head>
 <body>
- <table id="games" class="display compact" cellspacing="0" width="100%">
+ <table id="games" class="display compact">
    <thead>
     <tr>
      <th>Name</th>
