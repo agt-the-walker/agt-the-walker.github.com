@@ -1,0 +1,48 @@
+I don't know if I need to list them, since there is nothing popular (the most 
+stars I have is 1) or particularly original, but here is a list of my Github
+repositories (not counting forks):
+
+https://github.com/agt-the-walker/agt-the-walker.github.com
+	Very small website
+
+https://github.com/agt-the-walker/arimaa-utils
+	Small utilities to download archived games from http://arimaa.com/arimaa/, print normalized setups...
+
+https://github.com/agt-the-walker/board-utils
+	BGG scripts and HTI (hidden trackable information) analysis
+
+https://github.com/agt-the-walker/chess-utils
+	Small utilities to generate Capablanca Random Chess positions, etc. Rambling about Chess variants
+
+https://github.com/agt-the-walker/dotfiles
+	~agt on Arch Linux
+
+https://github.com/agt-the-walker/kashogi
+	Implements pieces from various shogi variants (standard, Wa, Tori, Okisaki) on an arbitrary board size
+
+https://github.com/agt-the-walker/kaya-vagrant
+	Vagrant file to test/run Kaya (KDE board game suite)
+
+https://github.com/agt-the-walker/libkashogi-old
+	DEPRECATED - use kashogi instead
+
+https://github.com/agt-the-walker/node-course-2-chat-app
+	Following https://www.udemy.com/the-complete-nodejs-developer-course-2/
+
+https://github.com/agt-the-walker/node-course-2-todo-api
+	Following https://www.udemy.com/the-complete-nodejs-developer-course-2/
+
+https://github.com/agt-the-walker/node-course-2-web-server
+	Following https://www.udemy.com/the-complete-nodejs-developer-course-2/
+
+https://github.com/agt-the-walker/osl-vagrant
+	Vagrant file to build/test OpenShogiLib
+
+https://github.com/agt-the-walker/pam_mount-vagrant
+	Vagrant file showing how to configure/use pam_mount on Arch Linux
+
+https://github.com/agt-the-walker/shogidokoro-vagrant
+	Vagrant file to run Shogidokoro (Windows application)
+
+https://github.com/agt-the-walker/shogi-utils
+	Small utilities to download games from 81Dojo and generate Shogi22680 positions. Rambling about Shogi variants
